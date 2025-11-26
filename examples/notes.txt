@@ -1,0 +1,12 @@
+To compile the first example:
+
+1. Open a new terminal (make sure its cmd, not bash or powershell)
+2. Run this command:
+    call "C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+    -- This opens a terminal that's in the proper environment for everything needed to compile
+    -- UPDATE: this isnt needed anymore just have a cmd
+3. Run the compilation command
+    hipcc examples/01_vector_add.hip -o vector_add_example.exe
+    -- My GPU is an RX 6600, so I use gfx1032, may be different for you just ask chat or something
+4. Lastly just execute the created executable
+    vector_add_example.exe
